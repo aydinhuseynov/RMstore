@@ -6,6 +6,7 @@ import { setProducts } from "../redux/productSlice";
 import { useSelector, useDispatch } from "react-redux";
 import React, { useEffect } from "react";
 import ProductCard from "../components/ProductCard";
+import { toast, ToastContainer } from "react-toastify";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -14,10 +15,13 @@ const Home = () => {
     dispatch(setProducts(mockData));
   }, [dispatch]);
 
-  console.log(products);
+  const showToast = (message) => {
+    toast.success(message);
+  };
 
   return (
     <React.Fragment>
+       <ToastContainer position="top-right" autoClose={1000} />
       <div className="bg-white mt-2 px-4 md:px-16 lg:px-24">
         <div className="container mx-auto py-4 flex flex-col md:flex-row space-x-2">
           <div className="w-full md:w-3/12">
@@ -70,8 +74,8 @@ const Home = () => {
            Our Top Products
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 cursor-pointer">
-            {products.products.slice(0, 5).map((product, index) => (
-              <ProductCard key={index} product={product} />
+            {products.products.slice(12, 17).map((product, index) => (
+              <ProductCard showToast={showToast} key={index} product={product} />
             ))}
           </div>
         </div>

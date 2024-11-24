@@ -32,7 +32,8 @@ const Navbar = () => {
     }
     const products = useSelector(state =>state.cart.products)
   return (
-    <nav className="bg=white shadow-md">
+   <div>
+     <nav className="bg=white shadow-md">
         <div className="container mx-auto px-4 md:px-16 lg:px-24 py-4 flex justify-between items-center"> 
             <div className="text-lg font-bold">
                 <Link to="/" >
@@ -82,6 +83,7 @@ const Navbar = () => {
             {isLogin ? <Login openSignUp={openSignUp}/> : <Register openLogin={openLogin}/>}
         </Modal>
     </nav>
+   </div>
   )
 }
 
