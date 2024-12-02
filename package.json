@@ -1,6 +1,6 @@
 {
   "name": "rmstore",
-  "homepage": "https://aydinhuseynov.github.io/RMstore/",
+  "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -b main" 
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
