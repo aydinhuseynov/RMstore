@@ -1,8 +1,45 @@
-# React + Vite
+    RMstore
+RMstore is an e-commerce web application built using React and Vite, featuring state management with Redux, UI components from Material UI, and styling with Tailwind CSS. The project also integrates Email.js for email services.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+    🚀 Features
+🛒 E-commerce functionality – Product listing, cart management, checkout, etc.
+🌍 State management with Redux – Efficient global state handling
+🎨 Modern UI with Material UI & Tailwind CSS – Responsive and stylish design
+✉️ Email integration using Email.js – Contact or order confirmation system
+⚡ Optimized with Vite – Fast build and hot module replacement
 
-Currently, two official plugins are available:
+    🛠 #Technologies Used
+React + Vite – Fast and modern frontend framework
+Redux – State management
+Material UI – Pre-built UI components
+Tailwind CSS – Utility-first styling
+Email.js – Email service integration
+JavaScript (ES6+) – Core programming language
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Setup & Installation
+To run RMstore locally, follow these steps:
+# Clone the repository
+git clone https://github.com/aydinhuseynov/RMstore.git
+
+# Navigate to the project directory
+cd RMstore
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+Project Structure
+RMstore/
+│── src/
+│   ├── components/   # Reusable components
+│   ├── pages/        # Application pages
+│   ├── store/        # Redux store & slices
+│   ├── styles/       # Tailwind CSS styles
+│   ├── App.js        # Main application file
+│   ├── main.js       # React DOM render
+│── public/           # Static assets
+│── package.json      # Dependencies & scripts
+│── README.md         # Project documentation
+
